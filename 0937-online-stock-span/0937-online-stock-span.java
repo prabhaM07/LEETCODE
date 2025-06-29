@@ -14,18 +14,16 @@ class StockSpanner {
         while(!st.isEmpty() && arr.get(st.peek())<=price){
             st.pop();
         }
-        
+        int span;
         if(st.isEmpty()){
-            st.push(c);
-            c++;
-            return c;
+            span = c+1;
         }
         else{
-            int val = st.peek();
-            st.push(c);
-            c++;
-            return (c-val)-1;
+            span = c-st.peek();
         }
+        st.push(c);
+        c++;
+        return span;
         
     }
 }
