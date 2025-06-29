@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/prabhaM07/LEETCODE/tree/master/0496-next-greater-element-i) |
+| [1046-max-consecutive-ones-iii](https://github.com/prabhaM07/LEETCODE/tree/master/1046-max-consecutive-ones-iii) |
 ## Hash Table
 |  |
 | ------- |
@@ -43,4 +44,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/prabhaM07/LEETCODE/tree/master/0020-valid-parentheses) |
+## Binary Search
+|  |
+| ------- |
+| [1046-max-consecutive-ones-iii](https://github.com/prabhaM07/LEETCODE/tree/master/1046-max-consecutive-ones-iii) |
+## Sliding Window
+|  |
+| ------- |
+| [1046-max-consecutive-ones-iii](https://github.com/prabhaM07/LEETCODE/tree/master/1046-max-consecutive-ones-iii) |
+## Prefix Sum
+|  |
+| ------- |
+| [1046-max-consecutive-ones-iii](https://github.com/prabhaM07/LEETCODE/tree/master/1046-max-consecutive-ones-iii) |
 <!---LeetCode Topics End-->
