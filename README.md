@@ -62,4 +62,20 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1182-game-play-analysis-iv](https://github.com/prabhaM07/LEETCODE/tree/master/1182-game-play-analysis-iv) |
 | [1292-immediate-food-delivery-ii](https://github.com/prabhaM07/LEETCODE/tree/master/1292-immediate-food-delivery-ii) |
 | [1317-monthly-transactions-i](https://github.com/prabhaM07/LEETCODE/tree/master/1317-monthly-transactions-i) |
+## Backtracking
+|  |
+| ------- |
+| [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+## Depth-First Search
+|  |
+| ------- |
+| [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+## Graph
+|  |
+| ------- |
+| [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
 <!---LeetCode Topics End-->
