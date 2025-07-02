@@ -6,17 +6,16 @@ class Solution {
         if(v[source]){
             return;
         }
-        temp.add(source);
         v[source] = true;
+        temp.add(source);
 
         if(source == n-1){
             ans.add(new ArrayList<>(temp)); 
         }
-         
+
         for(int neigh : graph[source]){
             if(!v[neigh]){
                 dfs(graph,neigh,v,n);
-               
             }
         }
         temp.remove(temp.size() - 1);
