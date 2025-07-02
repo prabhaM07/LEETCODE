@@ -56,4 +56,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1046-max-consecutive-ones-iii](https://github.com/prabhaM07/LEETCODE/tree/master/1046-max-consecutive-ones-iii) |
+## Database
+|  |
+| ------- |
+| [1317-monthly-transactions-i](https://github.com/prabhaM07/LEETCODE/tree/master/1317-monthly-transactions-i) |
 <!---LeetCode Topics End-->
