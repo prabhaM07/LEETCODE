@@ -17,15 +17,8 @@ class Solution {
             int c = rem.cur;
             int p = rem.parent;
 
-            if (!v[c]) {
-                if (p == -1)
-                    color[c] = true;
-                else
-                    color[c] = !color[p];
-            } else {
-                if (color[c] == color[p]) {
-                    return false;
-                }
+            if (p!=-1 && !color[p]) {
+                color[c] = true;
             }
 
             v[c] = true;
@@ -33,10 +26,8 @@ class Solution {
             for (int neigh : graph[c]) {
                 if (!v[neigh]) {
                     q.add(new Pair(neigh, c));
-                } else {
-                    if (color[neigh] == color[c]) {
+                } else if (color[neigh] == color[c])  {
                         return false;
-                    }
                 }
             }
         }
