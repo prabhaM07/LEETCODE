@@ -22,13 +22,14 @@ class Solution {
        List<Integer> ans = new ArrayList<>();
        if(root == null) return ans;
        while(st.size()>0){
-            temp = st.peek();
+
+            
             while(temp.left != null){
                 st.push(temp.left);
                 temp = temp.left;
             }
 
-            temp = st.peek();
+            
             while(st.size()>0){
                 temp = st.pop();
                 ans.add(temp.val);
