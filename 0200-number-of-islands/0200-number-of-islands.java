@@ -1,33 +1,36 @@
 class Solution {
-
-    public void dfs(char[][] grid,int sr,int sc,boolean[][] v,int n,int m){
-
-        if(sr<0 || sr>=n || sc<0 || sc>=m || grid[sr][sc]=='0'|| v[sr][sc] == true){
+    public void DFS(int sr,int sc,char[][] grid){
+        if(sr<0 || sc<0 || sr>=grid.length || sc>= grid[0].length || grid[sr][sc]=='0'){
             return;
         }
-        v[sr][sc] = true;
-
-        int[][] dict = {{sr-1,sc},{sr,sc+1},{sr+1,sc},{sr,sc-1}};
-
-        for(int[] k : dict){
-            int nsr = k[0];
-            int nsc = k[1];
-            dfs(grid,nsr,nsc,v,n,m);
+        if(grid[sr][sc]=='1'){
+            grid[sr][sc] = '0';
         }
+
+        //UP
+        DFS(sr-1,sc,grid);
+        //right
+        DFS(sr,sc+1,grid);
+        //down
+        DFS(sr+1,sc,grid);
+        //left
+        DFS(sr,sc-1,grid);
+
+
     }
     public int numIslands(char[][] grid) {
-        int n = grid.length;
-        int m = grid[0].length;
-        boolean[][] v = new boolean[n][m];
-        int c=0;
-        for(int i=0;i<n;i++){
-            for(int j =0;j<m;j++){
-                if(grid[i][j]=='1' && !v[i][j]){
-                    c+=1;
-                    dfs(grid,i,j,v,n,m);
-                }
-            }
-        }
+
+       int c = 0;
+       for(int i=0;i<grid.length;i++){
+           for(int j=0;j<grid[0].length;j++){
+               if(grid[i][j]=='1'){
+                   c+=1;
+                   DFS(i,j,grid);
+               }
+           }
+       }
+
         return c;
+
     }
 }
