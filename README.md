@@ -87,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+| [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -94,16 +95,19 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+| [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Graph
 |  |
 | ------- |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+| [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Union Find
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/prabhaM07/LEETCODE/tree/master/0200-number-of-islands) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
+| [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Tree
 |  |
 | ------- |
