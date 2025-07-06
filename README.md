@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0496-next-greater-element-i](https://github.com/prabhaM07/LEETCODE/tree/master/0496-next-greater-element-i) |
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
 | [1046-max-consecutive-ones-iii](https://github.com/prabhaM07/LEETCODE/tree/master/1046-max-consecutive-ones-iii) |
+| [1073-number-of-enclaves](https://github.com/prabhaM07/LEETCODE/tree/master/1073-number-of-enclaves) |
 ## Hash Table
 |  |
 | ------- |
@@ -94,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+| [1073-number-of-enclaves](https://github.com/prabhaM07/LEETCODE/tree/master/1073-number-of-enclaves) |
 | [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Breadth-First Search
 |  |
@@ -105,6 +107,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+| [1073-number-of-enclaves](https://github.com/prabhaM07/LEETCODE/tree/master/1073-number-of-enclaves) |
 | [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Graph
 |  |
@@ -120,6 +123,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/prabhaM07/LEETCODE/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/prabhaM07/LEETCODE/tree/master/0547-number-of-provinces) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
+| [1073-number-of-enclaves](https://github.com/prabhaM07/LEETCODE/tree/master/1073-number-of-enclaves) |
 | [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Tree
 |  |
@@ -148,6 +152,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/prabhaM07/LEETCODE/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/prabhaM07/LEETCODE/tree/master/0200-number-of-islands) |
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
+| [1073-number-of-enclaves](https://github.com/prabhaM07/LEETCODE/tree/master/1073-number-of-enclaves) |
 ## Dynamic Programming
 |  |
 | ------- |
