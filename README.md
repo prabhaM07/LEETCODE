@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0127-word-ladder](https://github.com/prabhaM07/LEETCODE/tree/master/0127-word-ladder) |
 | [0496-next-greater-element-i](https://github.com/prabhaM07/LEETCODE/tree/master/0496-next-greater-element-i) |
 ## Monotonic Stack
 |  |
@@ -53,6 +54,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0020-valid-parentheses](https://github.com/prabhaM07/LEETCODE/tree/master/0020-valid-parentheses) |
 | [0079-word-search](https://github.com/prabhaM07/LEETCODE/tree/master/0079-word-search) |
+| [0127-word-ladder](https://github.com/prabhaM07/LEETCODE/tree/master/0127-word-ladder) |
 ## Binary Search
 |  |
 | ------- |
@@ -108,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0100-same-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0100-same-tree) |
 | [0103-binary-tree-zigzag-level-order-traversal](https://github.com/prabhaM07/LEETCODE/tree/master/0103-binary-tree-zigzag-level-order-traversal) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0104-maximum-depth-of-binary-tree) |
+| [0127-word-ladder](https://github.com/prabhaM07/LEETCODE/tree/master/0127-word-ladder) |
 | [0130-surrounded-regions](https://github.com/prabhaM07/LEETCODE/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/prabhaM07/LEETCODE/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/prabhaM07/LEETCODE/tree/master/0547-number-of-provinces) |
