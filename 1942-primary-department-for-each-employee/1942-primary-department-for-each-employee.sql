@@ -7,5 +7,4 @@ WHERE
     CASE 
         WHEN cnt = 1 THEN primary_flag = 'N'
         ELSE primary_flag = 'Y'
-    END = TRUE
-;
+    END;
