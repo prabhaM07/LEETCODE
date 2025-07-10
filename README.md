@@ -110,6 +110,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+| [0820-find-eventual-safe-states](https://github.com/prabhaM07/LEETCODE/tree/master/0820-find-eventual-safe-states) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1073-number-of-enclaves](https://github.com/prabhaM07/LEETCODE/tree/master/1073-number-of-enclaves) |
 | [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
@@ -130,6 +131,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+| [0820-find-eventual-safe-states](https://github.com/prabhaM07/LEETCODE/tree/master/0820-find-eventual-safe-states) |
 | [1029-vertical-order-traversal-of-a-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/1029-vertical-order-traversal-of-a-binary-tree) |
 | [1036-rotting-oranges](https://github.com/prabhaM07/LEETCODE/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/prabhaM07/LEETCODE/tree/master/1073-number-of-enclaves) |
@@ -142,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/prabhaM07/LEETCODE/tree/master/0547-number-of-provinces) |
 | [0801-is-graph-bipartite](https://github.com/prabhaM07/LEETCODE/tree/master/0801-is-graph-bipartite) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
+| [0820-find-eventual-safe-states](https://github.com/prabhaM07/LEETCODE/tree/master/0820-find-eventual-safe-states) |
 | [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Union Find
 |  |
@@ -204,4 +207,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0207-course-schedule](https://github.com/prabhaM07/LEETCODE/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/prabhaM07/LEETCODE/tree/master/0210-course-schedule-ii) |
+| [0820-find-eventual-safe-states](https://github.com/prabhaM07/LEETCODE/tree/master/0820-find-eventual-safe-states) |
 <!---LeetCode Topics End-->
