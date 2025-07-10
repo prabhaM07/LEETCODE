@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Database
 |  |
 | ------- |
+| [0610-triangle-judgement](https://github.com/prabhaM07/LEETCODE/tree/master/0610-triangle-judgement) |
 | [0619-biggest-single-number](https://github.com/prabhaM07/LEETCODE/tree/master/0619-biggest-single-number) |
 | [1135-customers-who-bought-all-products](https://github.com/prabhaM07/LEETCODE/tree/master/1135-customers-who-bought-all-products) |
 | [1155-product-sales-analysis-iii](https://github.com/prabhaM07/LEETCODE/tree/master/1155-product-sales-analysis-iii) |
