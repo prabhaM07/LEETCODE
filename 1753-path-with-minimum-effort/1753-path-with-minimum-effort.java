@@ -46,15 +46,12 @@ class Solution {
                 if(cr>=0 && cr<n && cc>=0 && cc<m && v[cr][cc]==false)
                 {
                     int dif =  Math.abs(heights[sr][sc]-heights[cr][cc]);
-                    
-                    if(dif >= sdif && dif < dist[cr][cc]){
-                        dist[cr][cc] = dif;
-                        pq.add(new Pair(cr,cc,dif));
+                    int neweff = Math.max(dif,sdif);
+                    if(neweff < dist[cr][cc]){
+                        dist[cr][cc] = neweff;
+                        pq.add(new Pair(cr,cc,neweff));
                     }
-                    else if(sdif >= dif && sdif < dist[cr][cc]){
-                        dist[cr][cc] = sdif;
-                        pq.add(new Pair(cr,cc,sdif));
-                    }
+                   
                 }
             }
         }
