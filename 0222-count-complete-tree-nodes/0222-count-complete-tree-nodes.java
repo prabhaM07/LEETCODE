@@ -13,17 +13,31 @@
  *     }
  * }
  */
-class Solution {
-    int c = 0;
-    public void dfs(TreeNode root){
-        if(root == null) return;
 
-        c++;
-        dfs(root.left);
-        dfs(root.right);
+class Solution {
+    public int height(TreeNode root){
+        if(root == null){
+            return 0;
+        }
+        int ls = 1+ height(root.left);
+        int rs = 1+ height(root.right);
+
+        return ls > rs ? ls : rs ;
     }
+
+    
     public int countNodes(TreeNode root) {
-        dfs(root);
-        return c;
+        if(root == null)
+            return 0;
+        
+        int ls = height(root.left);
+        int rs = height(root.right);
+        System.out.println(ls+" "+rs);
+        
+        if(ls == rs){
+            return 1 + (int)Math.pow(2,ls) - 1 + countNodes(root.right);
+        }
+        else
+            return 1 +  (int)Math.pow(2,rs) - 1 + countNodes(root.left);
     }
 }
