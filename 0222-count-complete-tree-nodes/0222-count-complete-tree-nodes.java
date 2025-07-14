@@ -35,7 +35,7 @@ class Solution {
         System.out.println(ls+" "+rs);
         
         if(ls == rs){
-            return 1 + (int)Math.pow(2,ls) - 1 + countNodes(root.right);
+            return (1 << ls)  + countNodes(root.right);
         }
         else
             return 1 +  (int)Math.pow(2,rs) - 1 + countNodes(root.left);
