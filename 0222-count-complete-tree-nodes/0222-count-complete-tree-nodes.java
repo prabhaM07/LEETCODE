@@ -38,6 +38,6 @@ class Solution {
             return (1 << ls)  + countNodes(root.right);
         }
         else
-            return 1 +  (int)Math.pow(2,rs) - 1 + countNodes(root.left);
+            return (1 << rs) + countNodes(root.left);
     }
 }
