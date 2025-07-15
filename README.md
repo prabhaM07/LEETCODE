@@ -171,6 +171,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0803-cheapest-flights-within-k-stops](https://github.com/prabhaM07/LEETCODE/tree/master/0803-cheapest-flights-within-k-stops) |
 | [0813-all-paths-from-source-to-target](https://github.com/prabhaM07/LEETCODE/tree/master/0813-all-paths-from-source-to-target) |
 | [0820-find-eventual-safe-states](https://github.com/prabhaM07/LEETCODE/tree/master/0820-find-eventual-safe-states) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/prabhaM07/LEETCODE/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2793-count-the-number-of-complete-components](https://github.com/prabhaM07/LEETCODE/tree/master/2793-count-the-number-of-complete-components) |
 ## Union Find
 |  |
@@ -240,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0124-binary-tree-maximum-path-sum](https://github.com/prabhaM07/LEETCODE/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/prabhaM07/LEETCODE/tree/master/0803-cheapest-flights-within-k-stops) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/prabhaM07/LEETCODE/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Sorting
 |  |
 | ------- |
@@ -250,6 +252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/prabhaM07/LEETCODE/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/prabhaM07/LEETCODE/tree/master/0210-course-schedule-ii) |
 | [0820-find-eventual-safe-states](https://github.com/prabhaM07/LEETCODE/tree/master/0820-find-eventual-safe-states) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/prabhaM07/LEETCODE/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -261,6 +264,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0744-network-delay-time](https://github.com/prabhaM07/LEETCODE/tree/master/0744-network-delay-time) |
 | [0803-cheapest-flights-within-k-stops](https://github.com/prabhaM07/LEETCODE/tree/master/0803-cheapest-flights-within-k-stops) |
+| [2090-number-of-ways-to-arrive-at-destination](https://github.com/prabhaM07/LEETCODE/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 ## Bit Manipulation
 |  |
 | ------- |
