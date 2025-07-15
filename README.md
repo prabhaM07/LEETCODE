@@ -269,4 +269,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0222-count-complete-tree-nodes](https://github.com/prabhaM07/LEETCODE/tree/master/0222-count-complete-tree-nodes) |
+## Math
+|  |
+| ------- |
+| [1303-minimum-moves-to-reach-target-score](https://github.com/prabhaM07/LEETCODE/tree/master/1303-minimum-moves-to-reach-target-score) |
+## Greedy
+|  |
+| ------- |
+| [1303-minimum-moves-to-reach-target-score](https://github.com/prabhaM07/LEETCODE/tree/master/1303-minimum-moves-to-reach-target-score) |
 <!---LeetCode Topics End-->
