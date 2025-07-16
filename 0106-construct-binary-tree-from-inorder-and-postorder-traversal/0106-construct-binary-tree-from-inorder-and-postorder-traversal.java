@@ -32,10 +32,10 @@ class Solution {
             }
         }
 
-        int no_of_left = (k - ins)-1;
+        int no_of_left = (k - ins);
 
-        root.left = build(inorder,ins,k-1,postorder,pos,no_of_left+pos);
-        root.right = build(inorder,k+1,ine,postorder,no_of_left+pos+1,poe-1);
+        root.left = build(inorder,ins,k-1,postorder,pos,no_of_left+pos-1);
+        root.right = build(inorder,k+1,ine,postorder,no_of_left+pos,poe-1);
 
         return root;
     }
