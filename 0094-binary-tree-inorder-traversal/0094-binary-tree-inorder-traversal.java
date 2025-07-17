@@ -14,30 +14,42 @@
  * }
  */
 class Solution {
+    public TreeNode right_most_node(TreeNode proot,TreeNode root){
+
+        while(root.right !=null){
+            
+            if(root.right == proot){
+                break;
+            }
+            else
+                root = root.right;
+        }
+        return root;
+    }
+
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> ans = new ArrayList<>();
-        Set<TreeNode> v = new HashSet<>();
+        TreeNode temp = root;
 
-       if(root == null) return ans; 
-       Stack<TreeNode> st = new Stack<>();
-       st.push(root);
-       while(st.peek().left != null){
-            st.push(st.peek().left);
-       }
-       while(st.size()>0){
-            if(st.peek().left != null && !v.contains(st.peek().left)){
-                st.push(st.peek().left);
-                continue;
+        while(root!=null){
+            if(root.left!=null){
+              
+                TreeNode t = right_most_node(root,root.left);
+                
+                if(t.right != root)
+                {
+                    t.right = root;
+                    root = root.left;
+                    continue;
+                }
+                else{
+                    t.right = null;
+                }
             }
-
-            TreeNode temp = st.pop();
-            v.add(temp);
-            ans.add(temp.val);
             
-            if(temp.right!= null && !v.contains(temp.right)){
-                st.push(temp.right);
-            }
-       }
-       return ans;
+            ans.add(root.val);
+            root = root.right;
+        }
+        return ans;
     }
 }
