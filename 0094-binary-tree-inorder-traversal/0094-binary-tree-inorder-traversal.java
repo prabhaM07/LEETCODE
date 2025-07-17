@@ -15,33 +15,29 @@
  */
 class Solution {
     public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> ans = new ArrayList<>();
+        Set<TreeNode> v = new HashSet<>();
+
+       if(root == null) return ans; 
        Stack<TreeNode> st = new Stack<>();
        st.push(root);
-       TreeNode temp = root;
-
-       List<Integer> ans = new ArrayList<>();
-       if(root == null) return ans;
+       while(st.peek().left != null){
+            st.push(st.peek().left);
+       }
        while(st.size()>0){
-
-            
-            while(temp.left != null){
-                st.push(temp.left);
-                temp = temp.left;
+            if(st.peek().left != null && !v.contains(st.peek().left)){
+                st.push(st.peek().left);
+                continue;
             }
 
+            TreeNode temp = st.pop();
+            v.add(temp);
+            ans.add(temp.val);
             
-            while(st.size()>0){
-                temp = st.pop();
-                ans.add(temp.val);
-                if(temp.right != null){
-                    st.push(temp.right);
-                    temp = temp.right;
-                    break;
-                }
+            if(temp.right!= null && !v.contains(temp.right)){
+                st.push(temp.right);
             }
-            
-       } 
+       }
        return ans;
-
     }
 }
