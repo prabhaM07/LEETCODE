@@ -13,17 +13,35 @@
  *     }
  * }
  */
-class Solution {
 
-    TreeNode prev = null;
-    public void flatten(TreeNode root) {
-        if(root == null) return;
+class Solution {
+    public TreeNode last(TreeNode root){
         
-        flatten(root.right);
-        flatten(root.left);
-       
-        root.right = prev;
-        root.left = null;
-        prev = root;
+        while(true){
+            if(root.right == null && root.left == null) break;
+
+            if(root.right !=null ){
+                root = root.right;
+            }
+            else if(root.left != null){
+                root = root.left;
+            }
+        }
+        return root;
     }
+
+    public void flatten(TreeNode root) {
+
+        while(root!=null){
+            if(root.left!=null){
+                TreeNode t = last(root.left);
+                if(root.right !=null)
+                t.right = root.right;
+                root.right = root.left;
+                root.left = null;
+            }
+            root = root.right;
+        }
+    }
+
 }
