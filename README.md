@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0225-implement-stack-using-queues](https://github.com/prabhaM07/LEETCODE/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/prabhaM07/LEETCODE/tree/master/0232-implement-queue-using-stacks) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0937-online-stock-span](https://github.com/prabhaM07/LEETCODE/tree/master/0937-online-stock-span) |
 ## Queue
 |  |
@@ -66,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0020-valid-parentheses](https://github.com/prabhaM07/LEETCODE/tree/master/0020-valid-parentheses) |
 | [0079-word-search](https://github.com/prabhaM07/LEETCODE/tree/master/0079-word-search) |
 | [0127-word-ladder](https://github.com/prabhaM07/LEETCODE/tree/master/0127-word-ladder) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0297-serialize-and-deserialize-binary-tree) |
 ## Binary Search
 |  |
 | ------- |
@@ -126,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0207-course-schedule](https://github.com/prabhaM07/LEETCODE/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/prabhaM07/LEETCODE/tree/master/0210-course-schedule-ii) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0543-diameter-of-binary-tree) |
 | [0547-number-of-provinces](https://github.com/prabhaM07/LEETCODE/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0662-maximum-width-of-binary-tree) |
@@ -154,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/prabhaM07/LEETCODE/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/prabhaM07/LEETCODE/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/prabhaM07/LEETCODE/tree/master/0210-course-schedule-ii) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0547-number-of-provinces](https://github.com/prabhaM07/LEETCODE/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0662-maximum-width-of-binary-tree) |
 | [0733-flood-fill](https://github.com/prabhaM07/LEETCODE/tree/master/0733-flood-fill) |
@@ -211,6 +215,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/prabhaM07/LEETCODE/tree/master/0199-binary-tree-right-side-view) |
 | [0222-count-complete-tree-nodes](https://github.com/prabhaM07/LEETCODE/tree/master/0222-count-complete-tree-nodes) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0662-maximum-width-of-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
@@ -235,6 +240,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0199-binary-tree-right-side-view](https://github.com/prabhaM07/LEETCODE/tree/master/0199-binary-tree-right-side-view) |
 | [0222-count-complete-tree-nodes](https://github.com/prabhaM07/LEETCODE/tree/master/0222-count-complete-tree-nodes) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
+| [0297-serialize-and-deserialize-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0543-diameter-of-binary-tree) |
 | [0662-maximum-width-of-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0662-maximum-width-of-binary-tree) |
 | [0893-all-nodes-distance-k-in-binary-tree](https://github.com/prabhaM07/LEETCODE/tree/master/0893-all-nodes-distance-k-in-binary-tree) |
