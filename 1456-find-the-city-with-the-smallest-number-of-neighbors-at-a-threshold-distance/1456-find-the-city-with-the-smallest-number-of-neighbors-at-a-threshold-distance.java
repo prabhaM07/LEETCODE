@@ -38,7 +38,7 @@ class Solution {
             }
             if(c<=mini){
                mini = c;
-               if(i>ans) ans = i;
+               ans = i;
             }
         }
         return ans;
