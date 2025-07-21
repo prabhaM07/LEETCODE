@@ -18,27 +18,14 @@ class Solution {
         if(root == null){
             return  new TreeNode(val);
         }
-        TreeNode temp = root;
-        while(temp != null){
-            if(val > temp.val){
-                if(temp.right != null){
-                    temp = temp.right;
-                }
-                else{
-                    temp.right = new TreeNode(val);
-                    break;
-                }
-            }
-            else{
-                if(temp.left != null){
-                    temp = temp.left;
-                }
-                else{
-                    temp.left = new TreeNode(val);
-                    break;
-                }
-            }
+        
+        if(val > root.val){
+                root.right = insertIntoBST(root.right,val);
         }
+        else{
+                root.left = insertIntoBST(root.left,val);
+        }
+      
         return root;
     }
 }
