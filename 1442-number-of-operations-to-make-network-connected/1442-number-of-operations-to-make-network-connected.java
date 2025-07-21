@@ -22,7 +22,8 @@ class Solution {
         Set<Integer> s = new HashSet<>();
 
         for(int i=0;i<n;i++){
-            s.add(findParent(par,i));
+            par[i] = findParent(par,i);
+            s.add(par[i]);
         }
         return s.size()-1;
 
