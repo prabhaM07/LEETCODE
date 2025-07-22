@@ -87,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0180-consecutive-numbers](https://github.com/prabhaM07/LEETCODE/tree/master/0180-consecutive-numbers) |
 | [0585-investments-in-2016](https://github.com/prabhaM07/LEETCODE/tree/master/0585-investments-in-2016) |
+| [0602-friend-requests-ii-who-has-the-most-friends](https://github.com/prabhaM07/LEETCODE/tree/master/0602-friend-requests-ii-who-has-the-most-friends) |
 | [0610-triangle-judgement](https://github.com/prabhaM07/LEETCODE/tree/master/0610-triangle-judgement) |
 | [0619-biggest-single-number](https://github.com/prabhaM07/LEETCODE/tree/master/0619-biggest-single-number) |
 | [0626-exchange-seats](https://github.com/prabhaM07/LEETCODE/tree/master/0626-exchange-seats) |
