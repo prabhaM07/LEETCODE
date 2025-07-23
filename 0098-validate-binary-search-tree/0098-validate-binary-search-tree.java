@@ -14,41 +14,14 @@
  * }
  */
 
-class Pair{
-    TreeNode n;
-    int dif;
-    Pair(TreeNode n,int dif){
-        this.n = n;
-        this.dif = dif;
-    }
-}
+
 class Solution {
-    
+    public boolean check(TreeNode root,long l,long r){
+        if(root == null) return true;
+        if(root.val<=l || root.val>=r) return false;
+        return check(root.left,l,root.val)&&check(root.right,root.val,r);
+    }
     public boolean isValidBST(TreeNode root) {
-        
-        Queue<Pair> q = new LinkedList<>();
-        q.add(new Pair(root,-1));
-
-        while(q.size()>0){
-            int n = q.size();
-            for(int i=0;i<n;i++){
-                Pair rem = q.poll();
-                TreeNode node = rem.n;
-                int dif = rem.dif;
-                if(node.left != null){
-                    int ldif = Math.abs(node.val - node.left.val);
-
-                    if(node.val <= node.left.val || (ldif > dif && dif != -1)) return false;
-                    q.add(new Pair(node.left,ldif));
-                }
-                if(node.right != null){
-                    int rdif = Math.abs(node.val - node.right.val);
-
-                    if(node.val >= node.right.val || (rdif > dif && dif != -1)) return false;
-                    q.add(new Pair(node.right,rdif));
-                }
-            }
-        }
-        return true;
+        return check(root,Long.MIN_VALUE,Long.MAX_VALUE);
     }
 }
