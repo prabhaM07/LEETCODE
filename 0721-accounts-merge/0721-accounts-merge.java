@@ -29,12 +29,14 @@ class Solution {
             }
         }
 
-       
+       for(int i=0;i<par.length;i++){
+          par[i] = findParent(par,i);
+       }
         HashMap<Integer,ArrayList<String>> hm = new HashMap<>();
 
         for(Map.Entry<String,Integer> entry: tm.entrySet()){
             int index = entry.getValue();
-            int up =findParent(par,par[index]);
+            int up =par[index];
             String mail = entry.getKey();
 
             if(!hm.containsKey(up)){
