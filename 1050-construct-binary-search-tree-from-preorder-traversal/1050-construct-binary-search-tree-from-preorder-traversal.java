@@ -13,48 +13,18 @@
  *     }
  * }
  */
-
-class Pair{
-    TreeNode node;
-    long l;
-    long r;
-    Pair(TreeNode node,long l,long r){
-        this.node = node;
-        this.l = l;
-        this.r = r;
-    }
-}
 class Solution {
-
-    public TreeNode bstFromPreorder(int[] preorder) {
-        Stack<Pair> st = new Stack<>();
-        if(preorder.length == 0)  return null;
-        TreeNode root = new TreeNode(preorder[0]);
-        st.push(new Pair(root,Integer.MIN_VALUE,Integer.MAX_VALUE));
-        int i =1;
-
-        while(st.size()>0 && i<preorder.length){
-            int next = preorder[i];
-            Pair p = st.peek();
-            TreeNode node = p.node;
-            long l = p.l;
-            long r = p.r;
-            System.out.println(next+" "+node.val+" "+l+" "+r);
-
-            if(next<node.val && next>l){
-                node.left = new TreeNode(next);
-                st.push(new Pair(node.left,l,node.val));
-                i++;
-            }
-            else if(next>node.val && next<r){
-                node.right = new TreeNode(next);
-                st.push(new Pair(node.right,node.val,r));
-                i++;
-            }
-            else{
-                st.pop();
-            }
-        }
+    public TreeNode create(int[] preorder,int[] index,int maxi,int n){
+        if(index[0] >= n || preorder[index[0]] > maxi) return null;
+        TreeNode root = new TreeNode(preorder[index[0]++]);
+        
+        root.left = create(preorder,index,preorder[index[0]-1],n);
+        root.right = create(preorder,index,maxi,n);
         return root;
+    }
+    public TreeNode bstFromPreorder(int[] preorder) {
+        int[] n = new int[1];
+        n[0] = 0;
+        return create(preorder,n,Integer.MAX_VALUE,preorder.length);
     }
 }
