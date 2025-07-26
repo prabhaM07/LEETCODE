@@ -1,89 +1,86 @@
 import java.util.*;
 
 class DisjointSet {
-    int[] parent, size;
+    private int[] parent, size;
 
     public DisjointSet(int n) {
-        parent = new int[n + 1];
-        size = new int[n + 1];
-        Arrays.fill(size, 1);
-
-        for (int i = 0; i <= n; i++) {
+        parent = new int[n];
+        size = new int[n];
+        for (int i = 0; i < n; i++) {
             parent[i] = i;
+            size[i] = 1;
         }
     }
 
-    public int findUpar(int node) {
-        if (parent[node] == node) return node;
-        return parent[node] = findUpar(parent[node]); // path compression
+    public int find(int u) {
+        if (parent[u] != u) {
+            parent[u] = find(parent[u]); // Path compression
+        }
+        return parent[u];
     }
 
     public void unionBySize(int u, int v) {
-        int ulp_u = findUpar(u);
-        int ulp_v = findUpar(v);
+        int pu = find(u);
+        int pv = find(v);
+        if (pu == pv) return;
 
-        if (ulp_u == ulp_v) return;
-
-        if (size[ulp_v] < size[ulp_u]) {
-            parent[ulp_v] = ulp_u;
-            size[ulp_u] += size[ulp_v];
+        if (size[pu] < size[pv]) {
+            parent[pu] = pv;
+            size[pv] += size[pu];
         } else {
-            parent[ulp_u] = ulp_v;
-            size[ulp_v] += size[ulp_u];
+            parent[pv] = pu;
+            size[pu] += size[pv];
         }
+    }
+
+    public boolean connected(int u, int v) {
+        return find(u) == find(v);
     }
 }
 
 class Solution {
     public int swimInWater(int[][] grid) {
         int n = grid.length;
-        int targetCell = (n - 1) * n + (n - 1);
+        int total = n * n;
+        DisjointSet dsu = new DisjointSet(total);
 
-        int[] delRow = {-1, 0, 1, 0};
-        int[] delCol = {0, 1, 0, -1};
+        List<int[]> cells = new ArrayList<>();
 
-        DisjointSet ds = new DisjointSet(n * n);
-        int[] vis = new int[n * n];
-
-        List<int[]> flat = new ArrayList<>();
-
-        // Flatten the grid
-        for (int r = 0; r < n; r++) {
-            for (int c = 0; c < n; c++) {
-                flat.add(new int[]{grid[r][c], r, c});
+        // Step 1: Flatten grid with elevation and coordinates
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                cells.add(new int[]{grid[i][j], i, j});
             }
         }
 
-        // Sort by elevation
-        flat.sort(Comparator.comparingInt(a -> a[0]));
+        // Step 2: Sort by elevation
+        cells.sort(Comparator.comparingInt(a -> a[0]));
 
-        for (int[] it : flat) {
-            int ele = it[0];
-            int r = it[1];
-            int c = it[2];
+        boolean[][] visited = new boolean[n][n];
+        int[][] dirs = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
 
-            int cell = r * n + c;
-            vis[cell] = 1;
+        for (int[] cell : cells) {
+            int h = cell[0];
+            int i = cell[1];
+            int j = cell[2];
+            visited[i][j] = true;
+            int curr = i * n + j;
 
-            // Connect neighbors if visited
-            for (int i = 0; i < 4; i++) {
-                int nrow = r + delRow[i];
-                int ncol = c + delCol[i];
-
-                if (nrow >= 0 && nrow < n && ncol >= 0 && ncol < n) {
-                    int ncell = nrow * n + ncol;
-                    if (vis[ncell] == 1) {
-                        ds.unionBySize(cell, ncell);
-                    }
+            // Union with visited neighbors
+            for (int[] d : dirs) {
+                int ni = i + d[0], nj = j + d[1];
+                if (ni >= 0 && ni < n && nj >= 0 && nj < n && visited[ni][nj]) {
+                    int neigh = ni * n + nj;
+                    dsu.unionBySize(curr, neigh);
                 }
             }
 
-            // Check if source and target are connected
-            if (ds.findUpar(0) == ds.findUpar(targetCell)) {
-                return ele;
+            // Check if top-left is connected to bottom-right
+            if (dsu.connected(0, total - 1)) {
+                return h;
             }
         }
 
-        return -1; // unreachable
+        return -1; // fallback
     }
 }
