@@ -1,86 +1,110 @@
 import java.util.*;
 
 class DisjointSet {
-    private int[] parent, size;
+    int[] par, size;
 
     public DisjointSet(int n) {
-        parent = new int[n];
+        par = new int[n];
         size = new int[n];
+        Arrays.fill(size, 1);
+
         for (int i = 0; i < n; i++) {
-            parent[i] = i;
-            size[i] = 1;
+            par[i] = i;
         }
     }
 
-    public int find(int u) {
-        if (parent[u] != u) {
-            parent[u] = find(parent[u]); // Path compression
-        }
-        return parent[u];
+    public int findParent(int[] par, int node) {
+        if (par[node] == node) return node;
+        par[node] = findParent(par, par[node]); // path compression
+        return par[node];
     }
 
-    public void unionBySize(int u, int v) {
-        int pu = find(u);
-        int pv = find(v);
-        if (pu == pv) return;
-
-        if (size[pu] < size[pv]) {
-            parent[pu] = pv;
-            size[pv] += size[pu];
+    public void union(int[] par, int[] size, int up1, int up2) {
+        if (size[up1] > size[up2]) {
+            par[up2] = up1;
+            size[up1] += size[up2];
         } else {
-            parent[pv] = pu;
-            size[pu] += size[pv];
+            par[up1] = up2;
+            size[up2] += size[up1];
         }
-    }
-
-    public boolean connected(int u, int v) {
-        return find(u) == find(v);
     }
 }
 
 class Solution {
     public int swimInWater(int[][] grid) {
         int n = grid.length;
-        int total = n * n;
-        DisjointSet dsu = new DisjointSet(total);
+        int target = (n - 1) * n + (n - 1);
 
-        List<int[]> cells = new ArrayList<>();
+        int[] dR = {-1, 0, 1, 0};
+        int[] dC = {0, 1, 0, -1};
 
-        // Step 1: Flatten grid with elevation and coordinates
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
-                cells.add(new int[]{grid[i][j], i, j});
+        int[] par = new int[n * n];
+        int[] size = new int[n * n];
+        int[] vis = new int[n * n];
+
+        for (int i = 0; i < n * n; i++) {
+            par[i] = i;
+            size[i] = 1;
+        }
+
+        List<int[]> flat = new ArrayList<>();
+
+        // Flatten grid
+        for (int sr = 0; sr < n; sr++) {
+            for (int sc = 0; sc < n; sc++) {
+                flat.add(new int[]{grid[sr][sc], sr, sc});
             }
         }
 
-        // Step 2: Sort by elevation
-        cells.sort(Comparator.comparingInt(a -> a[0]));
+        flat.sort(Comparator.comparingInt(a -> a[0]));
 
-        boolean[][] visited = new boolean[n][n];
-        int[][] dirs = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
+        for (int[] cellArr : flat) {
+            int ele = cellArr[0];
+            int sr = cellArr[1];
+            int sc = cellArr[2];
 
-        for (int[] cell : cells) {
-            int h = cell[0];
-            int i = cell[1];
-            int j = cell[2];
-            visited[i][j] = true;
-            int curr = i * n + j;
+            int sn = sr * n + sc;
+            vis[sn] = 1;
 
-            // Union with visited neighbors
-            for (int[] d : dirs) {
-                int ni = i + d[0], nj = j + d[1];
-                if (ni >= 0 && ni < n && nj >= 0 && nj < n && visited[ni][nj]) {
-                    int neigh = ni * n + nj;
-                    dsu.unionBySize(curr, neigh);
+            // connect neighbors
+            for (int k = 0; k < 4; k++) {
+                int nr = sr + dR[k];
+                int nc = sc + dC[k];
+
+                if (nr >= 0 && nr < n && nc >= 0 && nc < n) {
+                    int nn = nr * n + nc;
+                    if (vis[nn] == 1) {
+                        int up1 = findParent(par, sn);
+                        int up2 = findParent(par, nn);
+                        if (up1 != up2) {
+                            union(par, size, up1, up2);
+                        }
+                    }
                 }
             }
 
-            // Check if top-left is connected to bottom-right
-            if (dsu.connected(0, total - 1)) {
-                return h;
+            // check connection
+            if (findParent(par, 0) == findParent(par, target)) {
+                return ele;
             }
         }
 
-        return -1; // fallback
+        return -1;
+    }
+
+    private int findParent(int[] par, int n) {
+        if (par[n] == n) return n;
+        par[n] = findParent(par, par[n]);
+        return par[n];
+    }
+
+    private void union(int[] par, int[] size, int up1, int up2) {
+        if (size[up1] > size[up2]) {
+            par[up2] = up1;
+            size[up1] += size[up2];
+        } else {
+            par[up1] = up2;
+            size[up2] += size[up1];
+        }
     }
 }
