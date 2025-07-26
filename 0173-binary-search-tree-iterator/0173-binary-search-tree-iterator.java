@@ -15,42 +15,31 @@
  */
 class BSTIterator {
     
-    TreeNode root = null;
+    Stack<TreeNode> st = new Stack<>();
 
-    public TreeNode rightMost(TreeNode node){
-        TreeNode temp = node;
-
-        while (temp.right != null && temp.right != root) {
-            temp = temp.right;
+    public void fillStack(TreeNode root){
+        while(root != null){
+            st.push(root);
+            root = root.left;
         }
-        
-        return temp;
     }
-    public BSTIterator(TreeNode node) {
-        root = node;
+
+    public BSTIterator(TreeNode root) {
+        fillStack(root);
     }
     
     public int next() {
-        int ans = 0;
-        while(root.left != null){
-            TreeNode temp = rightMost(root.left);
-            if(temp.right == root){
-                temp.right = null;
-                break;
-            }
-            else{
-                temp.right = root;
-            }
-            root = root.left;
+        TreeNode root = st.pop();
+        if(root.right != null){
+            fillStack(root.right);
         }
-        ans = root.val;
-        root = root.right;
-        return ans;
+        return root.val;
     }
     
     public boolean hasNext() {
-        if(root != null) return true;
-        else return false;
+        if(st.size()==0) return false;
+
+        return true; 
     }
 }
 
