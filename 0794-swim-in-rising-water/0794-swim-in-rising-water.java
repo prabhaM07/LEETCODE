@@ -1,22 +1,10 @@
 import java.util.*;
 
-class DisjointSet {
-    int[] par, size;
-
-    public DisjointSet(int n) {
-        par = new int[n];
-        size = new int[n];
-        Arrays.fill(size, 1);
-
-        for (int i = 0; i < n; i++) {
-            par[i] = i;
-        }
-    }
-
-    public int findParent(int[] par, int node) {
-        if (par[node] == node) return node;
-        par[node] = findParent(par, par[node]); // path compression
-        return par[node];
+class Solution {
+    public int findParent(int[] par, int n) {
+        if (par[n] == n) return n;
+        par[n] = findParent(par, par[n]);
+        return par[n];
     }
 
     public void union(int[] par, int[] size, int up1, int up2) {
@@ -28,9 +16,7 @@ class DisjointSet {
             size[up2] += size[up1];
         }
     }
-}
 
-class Solution {
     public int swimInWater(int[][] grid) {
         int n = grid.length;
         int target = (n - 1) * n + (n - 1);
@@ -49,7 +35,6 @@ class Solution {
 
         List<int[]> flat = new ArrayList<>();
 
-        // Flatten grid
         for (int sr = 0; sr < n; sr++) {
             for (int sc = 0; sc < n; sc++) {
                 flat.add(new int[]{grid[sr][sc], sr, sc});
@@ -66,7 +51,6 @@ class Solution {
             int sn = sr * n + sc;
             vis[sn] = 1;
 
-            // connect neighbors
             for (int k = 0; k < 4; k++) {
                 int nr = sr + dR[k];
                 int nc = sc + dC[k];
@@ -83,28 +67,11 @@ class Solution {
                 }
             }
 
-            // check connection
             if (findParent(par, 0) == findParent(par, target)) {
                 return ele;
             }
         }
 
         return -1;
-    }
-
-    private int findParent(int[] par, int n) {
-        if (par[n] == n) return n;
-        par[n] = findParent(par, par[n]);
-        return par[n];
-    }
-
-    private void union(int[] par, int[] size, int up1, int up2) {
-        if (size[up1] > size[up2]) {
-            par[up2] = up1;
-            size[up1] += size[up2];
-        } else {
-            par[up1] = up2;
-            size[up2] += size[up1];
-        }
     }
 }
